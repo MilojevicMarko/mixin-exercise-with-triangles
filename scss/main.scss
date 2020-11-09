@@ -1,0 +1,35 @@
+@import "partials/mixins";
+@import "partials/fonts";
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  font-size: 20px;
+  background-color: #cccccc;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.up, .right, .down, .left {
+  display: inline-block;
+  margin-right: 150px;
+}
+.up {
+  @include triangleUp(100px, black);
+}
+.right {
+  @include triangleRight(70px, darkblue);
+}
+.down {
+  @include triangleDown(80px, #f90);
+}
+.left {
+  @include triangleLeft(50px, #333);
+}

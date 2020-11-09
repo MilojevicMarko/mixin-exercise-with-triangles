@@ -1,0 +1,28 @@
+@mixin triangleUp ($border-width, $color) {
+  width: 0;
+  height: 0;
+  border-left: $border-width solid transparent;
+  border-right: $border-width solid transparent;
+  border-bottom: $border-width solid $color;
+}
+@mixin triangleRight ($border-width, $color) {
+  width: 0;
+  height: 0;
+  border-top: $border-width solid transparent;
+  border-bottom: $border-width solid transparent;
+  border-left: $border-width solid $color;
+}
+@mixin triangleDown ($border-width, $color) {
+  width: 0;
+  height: 0;
+  border-left: $border-width solid transparent;
+  border-right: $border-width solid transparent;
+  border-top: $border-width solid $color;
+}
+@mixin triangleLeft ($border-width, $color) {
+  width: 0;
+  height: 0;
+  border-top: $border-width solid transparent;
+  border-bottom: $border-width solid transparent;
+  border-right: $border-width solid $color;
+}
